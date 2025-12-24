@@ -10,11 +10,7 @@
         body { background-color: rgb(20, 7, 41); }
 
         .container { width: calc(100%); height: calc(100%); overflow: hidden; display: flex; }
-        .wrapper{
-            background-color: red;
-            /* 수평 중앙 정렬하기 */
-            margin: 0 auto;
-        }
+        .wrapper{ background-color: red; margin: 0 auto; }
     </style>
     <link rel="stylesheet" href="./vssb.css">    
 </head>
@@ -28,14 +24,15 @@
                 <div class="info-display">
                     <div class="value-display"><label id="viewDisplay" ></label></div>
                     <div class="value-display"><label id="targetName" ></label></div>
-                    <div class="value-display"><label id="valueDisplay" >7</label></div>
+                    <div class="value-display"><label id="valueDisplay" >0</label></div>
                 </div>
                 <div class="slider-wrapper">
-                    <input type="range" id="verticalSlider" min="0" max="7" value="7" step="1">
+                    <input type="range" id="verticalSlider" min="0" max="50" value="0" step="1">
                 </div>
                 <div class="button-group">
-                    <button class="target-button active" data-target="volume">A</button>
-                    <button class="target-button" data-target="brightness">B</button>
+                    <button class="target-button active" data-target="volume">volumn</button>
+                    <button class="target-button" data-target="brightness">brightness</button>
+                    <button class="target-button" data-target="speed">speed</button>
                 </div>
             </div>
 
